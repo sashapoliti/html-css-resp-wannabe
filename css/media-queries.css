@@ -1,6 +1,23 @@
 /* media queries responsive */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) , (max-width: 1160px) {
     .container {
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .row {
+        flex-direction: column;
+    }
+    .lessons .col,
+    .steps .col,
+    .why-us .col-right,
+    .why-us .col-left {
+        width: 100%;
+    }
+    .lessons .col:first-child p,
+    .steps .col:not(.steps .col:last-child) p,
+    .why-us img {
+        margin-bottom: 5rem;
     }
 }
